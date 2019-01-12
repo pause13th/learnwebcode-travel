@@ -7,6 +7,8 @@
 @import "modules/_page-section";
 @import "modules/_row";
 @import "modules/_paragraph";
+@import "modules/_section-title";
+@import "modules/_feature-item";
 
 @import "modules/_masthead";
 @import "modules/_headline";
