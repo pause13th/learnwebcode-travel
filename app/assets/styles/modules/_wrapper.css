@@ -1,21 +1,30 @@
 .wrapper {
 
-	overflow: hidden;
-	padding: 0 18px;
+    overflow: hidden;
+    padding: 0 18px;
 
-	max-width: 1236px;
-	margin: 0 auto;
+    max-width: 1236px;
+    margin: 0 auto;
 
-	&--medium {
-		max-width: 976px;
-	}
+    &--medium {
+        max-width: 976px;
+    }
 
-	.wrapper {
-		padding-left: 0;
-		padding-right: 0;
-	}
+    &--nopadding-md {
+        padding-left: 0;
+        padding-right: 0;
 
-	&--b-margin {
-		margin-bottom: 3.875rem;
-	}
+        @mixin md {
+            padding: 0 18px;
+        }
+    }
+
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &--b-margin {
+        margin-bottom: 3.875rem;
+    }
 }

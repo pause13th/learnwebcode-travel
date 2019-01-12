@@ -1,16 +1,35 @@
 .section {
-	padding: 1.2rem 0;
+    padding: 1.2rem 0;
 
-	@mixin sm {
-		padding: 3rem 0;
-	}
+    @mixin sm {
+        padding: 3rem 0;
+    }
 
-	@mixin lg {
-		padding: 4.5rem 0;
-	}
+    @mixin lg {
+        padding: 4.5rem 0;
+    }
 
-	&--blue {
-		background-color: $mainBlue;
-		color: #fff;
-	}
+    &--blue {
+        background-color: $mainBlue;
+        color: #fff;
+    }
+
+    &--testimonial {
+        background-color: #e0e6ef;
+
+        @mixin lg {
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+
+            background-size: cover;
+
+        }
+    }
+
+    &--bpadding-md {
+    	padding-bottom: 0;
+
+    	@mixin md {
+    		padding-bottom: 4.5rem
+    	}
+    }
 }

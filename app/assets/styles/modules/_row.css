@@ -7,22 +7,35 @@
 
     }
 
+    &--gutters-small {
+        margin-right: -45px;
+    }
+
     &--gutters-large {
-    	margin-right: -100px;
+        margin-right: -100px;
     }
 
     &--gutters>div {
         padding-right: 65px;
     }
+
     &--gutters-large>div {
         padding-right: 100px;
+    }
+
+    &--gutters-small>div {
+        padding-right: 45px;
+    }
+
+    &--t-padding {
+        padding-top: 80px;
     }
 
     &__sm--nobmargin {
         margin-bottom: 1rem;
 
         @mixin sm {
-        	margin-bottom: 0rem;
+            margin-bottom: 0rem;
         }
     }
 
@@ -32,24 +45,50 @@
             float: left;
             width: 33.33%;
         }
+
         &__sm-4--large {
             width: 37%;
         }
+
         &__sm-8 {
             float: right;
             width: 66.66%;
         }
+
         &__sm-8--small {
             width: 63%;
         }
 
-        
+
     }
     @mixin md {
-    	&__md-6 {
-        	float: left;
-        	width: 50%;
+        &__md-6 {
+            float: left;
+            width: 50%;
         }
     }
 
+    @mixin lg {
+
+        &__lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+
+        
+    }
+
+    /* start equal height rules */
+
+    &--equal-height-lg {
+
+        @mixin lg {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
 }
