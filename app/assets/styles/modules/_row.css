@@ -1,0 +1,47 @@
+.row {
+
+    @mixin clearfix;
+
+    &--gutters {
+        margin-right: -65px;
+
+    }
+
+    &--gutters>div {
+        padding-right: 65px;
+    }
+
+    &__sm--nobmargin {
+        margin-bottom: 1rem;
+
+        @mixin sm {
+        	margin-bottom: 0rem;
+        }
+    }
+
+    @mixin sm {
+
+
+
+        &__sm-4 {
+            float: left;
+            width: 33.33%;
+
+
+        }
+
+        &__sm-4--large {
+            width: 37%;
+        }
+
+        &__sm-8 {
+            float: right;
+            width: 66.66%;
+        }
+
+        &__sm-8--small {
+            width: 63%;
+        }
+    }
+
+}
