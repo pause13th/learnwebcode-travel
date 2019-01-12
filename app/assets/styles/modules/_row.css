@@ -7,8 +7,15 @@
 
     }
 
+    &--gutters-large {
+    	margin-right: -100px;
+    }
+
     &--gutters>div {
         padding-right: 65px;
+    }
+    &--gutters-large>div {
+        padding-right: 100px;
     }
 
     &__sm--nobmargin {
@@ -21,26 +28,27 @@
 
     @mixin sm {
 
-
-
         &__sm-4 {
             float: left;
             width: 33.33%;
-
-
         }
-
         &__sm-4--large {
             width: 37%;
         }
-
         &__sm-8 {
             float: right;
             width: 66.66%;
         }
-
         &__sm-8--small {
             width: 63%;
+        }
+
+        
+    }
+    @mixin md {
+    	&__md-6 {
+        	float: left;
+        	width: 50%;
         }
     }
 
