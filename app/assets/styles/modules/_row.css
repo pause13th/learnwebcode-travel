@@ -80,7 +80,7 @@
 
     /* start equal height rules */
 
-    &--equal-height-lg {
+    .flexbox &--equal-height-lg {
 
         @mixin lg {
             display: flex;
