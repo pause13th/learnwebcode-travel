@@ -1,10 +1,11 @@
 .nav {
-	
-	padding-top: 10px;
-	@mixin md {
-		padding-top: 0;
-	}
-	
+
+    padding-top: 10px;
+
+    @mixin md {
+        padding-top: 0;
+    }
+
     &--pull-right {
 
         @mixin md {
@@ -51,8 +52,9 @@
         background-color: rgba($mainBlue, .5);
 
         @mixin md {
-        	font-size: 1rem;
-        	padding: 12px 0;
+            font-size: 1rem;
+            padding: 12px 0;
+            background-color: initial;
         }
     }
 }

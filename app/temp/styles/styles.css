@@ -1257,14 +1257,14 @@ a:active {
         }
 
 .nav {
-	
-	padding-top: 10px;
+
+    padding-top: 10px;
 }
 
 @media (min-width: 768px) {
 
 .nav {
-		padding-top: 0
+        padding-top: 0
 }
     }
 
@@ -1327,8 +1327,9 @@ a:active {
 @media (min-width: 768px) {
 
 .nav a {
-        	font-size: 1rem;
-        	padding: 12px 0
+            font-size: 1rem;
+            padding: 12px 0;
+            background-color: initial
     }
     }
 
