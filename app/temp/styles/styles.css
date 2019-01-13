@@ -1333,3 +1333,17 @@ a:active {
     }
     }
 
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: all .8s ease-out;
+    transition: all .8s ease-out;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
