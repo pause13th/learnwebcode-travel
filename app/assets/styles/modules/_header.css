@@ -10,8 +10,12 @@
     }
 
     @mixin md {
+        position: fixed;
         background-color: rgba($mainBlue, .3);
-
+        
+        &--dark {
+            background-color: rgba(23,51,72,.95);
+        }
     }
 
     &__btn-container {
@@ -29,10 +33,14 @@
         transform-origin: 50% 0;
         background-color: $mainBlue;
         padding: 25px 35px;
-
+        transition: transform .2s ease-out;
         @mixin md {
             left: auto;
             transform: translateX(0);
+
+            .header--dark & {
+                transform: scale(.56);
+            }
         }
     }
 

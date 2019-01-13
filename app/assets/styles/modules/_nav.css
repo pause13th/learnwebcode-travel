@@ -50,11 +50,19 @@
         padding: 5px 8px;
         font-size: .8rem;
         background-color: rgba($mainBlue, .5);
-
+        
+        transition: color .3s ease-out;
+        
         @mixin md {
             font-size: 1rem;
             padding: 12px 0;
             background-color: initial;
+
+            &.is-current-link {
+                color: #fabb69;
+            }
         }
+
+
     }
 }

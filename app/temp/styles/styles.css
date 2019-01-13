@@ -1109,8 +1109,13 @@ a:active {
 @media (min-width: 768px) {
 
 .header {
+        position: fixed;
         background-color: rgba(47,85,114, .3)
 }
+        
+        .header--dark {
+            background-color: rgba(23,51,72,.95);
+        }
     }
 
 @media (min-width: 768px) {
@@ -1130,6 +1135,10 @@ a:active {
                 transform-origin: 50% 0;
         background-color: #2f5572;
         padding: 25px 35px;
+        -webkit-transition: -webkit-transform .2s ease-out;
+        transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+        transition: transform .2s ease-out, -webkit-transform .2s ease-out;
     }
 
 @media (min-width: 768px) {
@@ -1139,6 +1148,11 @@ a:active {
             -webkit-transform: translateX(0);
                     transform: translateX(0)
     }
+
+            .header--dark .header__logo {
+                -webkit-transform: scale(.56);
+                        transform: scale(.56);
+            }
     }
 
 .header__logo-graphic {
@@ -1322,6 +1336,12 @@ a:active {
         padding: 5px 8px;
         font-size: .8rem;
         background-color: rgba(47,85,114, .5);
+        
+        -webkit-transition: color .3s ease-out;
+        
+        transition: color .3s ease-out;
+
+
     }
 
 @media (min-width: 768px) {
@@ -1330,7 +1350,13 @@ a:active {
             font-size: 1rem;
             padding: 12px 0;
             background-color: initial
+
+
     }
+
+            .nav a.is-current-link {
+                color: #fabb69;
+            }
     }
 
 .reveal-item {
