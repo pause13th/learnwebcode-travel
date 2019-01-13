@@ -542,22 +542,20 @@ a:active {
     }
 
 @media (min-width: 992px) {
-
-.section--testimonial {
-            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-
-            background-size: cover
-    }
+            .section--testimonial.lazyloaded {
+                background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+                background-size: cover;
+            }
     }
 
 .section--bpadding-md {
-    	padding-bottom: 0;
+        padding-bottom: 0;
     }
 
 @media (min-width: 768px) {
 
 .section--bpadding-md {
-    		padding-bottom: 4.5rem
+            padding-bottom: 4.5rem
     }
     }
 

@@ -18,18 +18,19 @@
         background-color: #e0e6ef;
 
         @mixin lg {
-            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-
-            background-size: cover;
+            &.lazyloaded {
+                background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+                background-size: cover;
+            }
 
         }
     }
 
     &--bpadding-md {
-    	padding-bottom: 0;
+        padding-bottom: 0;
 
-    	@mixin md {
-    		padding-bottom: 4.5rem
-    	}
+        @mixin md {
+            padding-bottom: 4.5rem
+        }
     }
 }
