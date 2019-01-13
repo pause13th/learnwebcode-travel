@@ -8,6 +8,11 @@
 
     }
 
+    &--lessmargin {
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
     strong {
         font-weight: 500;
     }
